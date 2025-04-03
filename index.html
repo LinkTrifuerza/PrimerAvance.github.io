@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendita </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tiendita </h1>
+        <p>Selecciona la opción deseada</p>
+    </header>
+
+    <main class="container">
+        <div class="card" onclick="redirigir('ventas.html')">
+            <img src="ventas.png" alt="Ventas">
+            <h3>Ventas</h3>
+            <p>Gestiona las ventas realizadas en la tienda.</p>
+            <button>Ir a Ventas</button>
+        </div>
+        
+        <div class="card" onclick="redirigir('inventario.html')">
+            <img src="inventario.png" alt="Inventario">
+            <h3>Inventario</h3>
+            <p>Consulta los productos disponibles.</p>
+            <button>Ver Inventario</button>
+        </div>
+        
+        <div class="card" onclick="redirigir('modificarinventario.html')">
+            <img src="inventario (1).png" alt="Modificar Inventario">
+            <h3>Modificar Inventario</h3>
+            <p>Añade o edita productos en el inventario.</p>
+            <button>Modificar</button>
+        </div>
+        
+        <div class="card" onclick="redirigir('detallesventas.html')">
+            <img src="informe-de-venta.png" alt="Detalles de Ventas">
+            <h3>Detalles de Ventas</h3>
+            <p>Revisa el historial de ventas.</p>
+            <button>Ver Detalles</button>
+        </div>
+        
+        <div class="card" onclick="redirigir('rembolso.html')">
+            <img src="pago-contra-reembolso.png" alt="Reembolsos">
+            <h3>Reembolsos</h3>
+            <p>Administra y revisa los reembolsos.</p>
+            <button>Ir a Reembolsos</button>
+        </div>
+        
+        <div class="card" onclick="redirigir('proveedores.html')">
+            <img src="entrega.png" alt="Proveedores">
+            <h3>Proveedores</h3>
+            <p>Gestiona la información de los proveedores.</p>
+            <button>Ir a Proveedores</button>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>2025 Tiendita . Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function redirigir(pagina) {
+            window.location.href = pagina;
+        }
+    </script>
+</body>
+</html>

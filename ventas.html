@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas - Tiendita </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ventas</h1>
+        <p>Administra las ventas realizadas</p>
+        <button onclick="volver()">Volver al inicio</button>
+    </header>
+
+    <main class="container">
+        <div class="card" onclick="redirigir('nueva_venta.html')">
+            <img src="nuevo.png" alt="Nueva Venta">
+            <h3>Nueva Venta</h3>
+            <p>Registrar una nueva venta.</p>
+            <button>Registrar Venta</button>
+        </div>
+        <div class="card" onclick="redirigir('historial_ventas.html')">
+            <img src="historial-de-transacciones.png" alt="Historial de Ventas">
+            <h3>Historial de Ventas</h3>
+            <p>Ver el historial de ventas realizadas.</p>
+            <button>Ver Historial</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tiendita. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function redirigir(pagina) {
+            window.location.href = pagina;
+        }
+        function volver() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

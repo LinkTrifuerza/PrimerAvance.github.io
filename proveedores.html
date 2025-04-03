@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proveedores - Tiendita </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Proveedores</h1>
+        <p>Administra la información de los proveedores</p>
+        <button onclick="volver()">Volver al inicio</button>
+    </header>
+
+    <main class="container">
+        <div class="card" onclick="redirigir('lista_proveedores.html')">
+            <img src="gestion.png" alt="Lista de Proveedores">
+            <h3>Lista de Proveedores</h3>
+            <p>Consulta todos los proveedores registrados.</p>
+            <button>Ver Lista</button>
+        </div>
+        <div class="card" onclick="redirigir('agregar_proveedor.html')">
+            <img src="mensajero.png" alt="Agregar Proveedor">
+            <h3>Agregar Proveedor</h3>
+            <p>Registra un nuevo proveedor.</p>
+            <button>Agregar</button>
+        </div>
+        <div class="card" onclick="redirigir('editar_proveedor.html')">
+            <img src="cadena-de-suministro.png" alt="Editar Proveedor">
+            <h3>Editar Proveedor</h3>
+            <p>Modifica la información de un proveedor.</p>
+            <button>Editar</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tiendita . Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function redirigir(pagina) {
+            window.location.href = pagina;
+        }
+        function volver() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

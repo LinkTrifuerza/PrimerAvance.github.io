@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Inventario - Tiendita </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Modificar Inventario</h1>
+        <p>Añade, edita o elimina productos</p>
+        <button onclick="volver()">Volver al inicio</button>
+    </header>
+
+    <main class="container">
+        <div class="card" onclick="redirigir('agregar_producto.html')">
+            <img src="agregar-producto.png" alt="Agregar Producto">
+            <h3>Agregar Producto</h3>
+            <p>Añade nuevos productos al inventario.</p>
+            <button>Agregar</button>
+        </div>
+        <div class="card" onclick="redirigir('editar_producto.html')">
+            <img src="prototipo.png" alt="Editar Producto">
+            <h3>Editar Producto</h3>
+            <p>Modifica la información de los productos.</p>
+            <button>Editar</button>
+        </div>
+        <div class="card" onclick="redirigir('eliminar_producto.html')">
+            <img src="eliminar-producto.png" alt="Eliminar Producto">
+            <h3>Eliminar Producto</h3>
+            <p>Elimina productos del inventario.</p>
+            <button>Eliminar</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tiendita . Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function redirigir(pagina) {
+            window.location.href = pagina;
+        }
+        function volver() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reembolsos - Tiendita </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Reembolsos</h1>
+        <p>Administra los reembolsos realizados</p>
+        <button onclick="volver()">Volver al inicio</button>
+    </header>
+
+    <main class="container">
+        <div class="card" onclick="redirigir('solicitar_reembolso.html')">
+            <img src="contra-reembolso.png" alt="Solicitar Reembolso">
+            <h3>Solicitar Reembolso</h3>
+            <p>Genera una nueva solicitud de reembolso.</p>
+            <button>Solicitar</button>
+        </div>
+        <div class="card" onclick="redirigir('historial_reembolsos.html')">
+            <img src="historial-de-transacciones (1).png" alt="Historial de Reembolsos">
+            <h3>Historial de Reembolsos</h3>
+            <p>Consulta los reembolsos realizados.</p>
+            <button>Ver Historial</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tiendita . Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function redirigir(pagina) {
+            window.location.href = pagina;
+        }
+        function volver() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
